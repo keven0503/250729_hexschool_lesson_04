@@ -1,0 +1,132 @@
+header .logo a:hover img{
+    opacity: 0.8;
+}
+
+.headerBg .headerArea{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true) center top no-repeat,rgba(0,0,0,0.9) center top no-repeat;
+    background-size: auto 100% ;
+    padding: 151px 0;
+    text-align: center;
+    position: relative;
+}
+
+.headerBg .headerArea::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.headerBg .head{
+    color: $neutral-0;
+    position: relative;
+}
+
+.headerBg .text{
+    color: $neutral-0;
+    position: relative;
+}
+
+
+.container.index-width{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.introBg{
+    padding: 0 110px;
+    background-color: $primary-100;
+    border-radius: 4px;
+    padding: 32px 32px 28px 32px;
+    margin: 64px 110px 48px 110px;
+}
+
+.introBg .h5{
+    text-align: center;
+}
+.introBg p{
+    text-align: center;
+}
+.articleBg{
+    padding: 0 0 32px 0;
+    margin: 0 110px 48px 110px;
+    border-bottom: 1px solid $neutral-300;
+}
+
+.articleBg .head{
+    margin: 24px 0;
+}
+
+.articleBg .list.historyList{
+    padding: 0 0 0 16px;
+}
+
+.articleBg .list.historyList li{
+    list-style-type: disc;
+}
+
+.articleBg .list.historyList .year{
+    border-right: 1px solid $neutral-900;
+    padding: 0 8px 0 0;
+    margin: 0 8px 0 0;
+}
+
+.articleBg .list.brandsList li{
+    border-left: 3px solid $neutral-300;
+    padding: 0 0 0 12px;
+}
+
+.articleBg .list.storyList{
+    padding: 0 0 0 28px;
+}
+
+.articleBg .list.storyList li{
+    position: relative;
+    margin: 0;
+    list-style-type: none;
+}
+
+.articleBg .list.storyList li a{
+    color: $primary-400;
+    margin: 8px 0;
+    display: inline-block;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.articleBg .list.storyList li a:hover{
+    color: $primary-500;
+}
+
+.articleBg .list.storyList li:before{
+    content: "↗";
+    position: absolute;
+    top: 7px;
+    left: -28px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $primary-400;
+}
+
+
+@media(max-width:767px){
+    .headerBg .headerArea{
+        padding: 87px 0;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true) center top no-repeat,rgba(0,0,0,0.9) center top no-repeat;
+        background-size:cover;
+    }
+    .introBg{
+        padding: 24px;
+        margin: 32px 0;
+    }
+    .articleBg{
+        margin: 0 0 32px 0;
+    }
+    .articleBg .head{
+        margin: 16px 0;
+    }
+}

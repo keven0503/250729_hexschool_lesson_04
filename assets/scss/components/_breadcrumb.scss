@@ -1,0 +1,20 @@
+/*麵包屑*/
+.breadcrumb li a{
+    color: $neutral-600;
+}
+
+.breadcrumb li a:hover{
+    color: $neutral-700;
+}
+
+.breadcrumb li a::after{
+    content: "/";
+    color: $neutral-300;
+    padding: 0 12px;
+}
+
+@media(max-width:767px){
+    .breadcrumb li a::after{
+        padding: 0 8px;
+    }
+}

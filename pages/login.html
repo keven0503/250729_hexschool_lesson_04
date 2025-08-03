@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+        <div class="container py-64 loginBg">
+            <div class="row flex-direction-column-md login-row-md">
+                <div class="picSet col-5 login-col-md-4 mb-md-32 ">
+                    <div class="picBox">
+                        <img src="/assets/images/banner-sm.png" alt="">
+                        <div class="textBox">
+                            <h2 class="display2 h2-md text-neutral-0 mb-16 mb-md-8">URBNSTEP</h2>
+                            <h3 class="h4 h6-md text-neutral-500">Your Step, Your Statement</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 login-col-md-4">
+                    <div class="infoSet py-120">
+                        <div class="infoBox">
+                            <h3 class="h3 h4-md mb-32 mb-md-24">歡迎！</h3>
+                            <ul class=" mb-32 mb-md-24 tabList flex">
+                                <li class="col-6 active"><a href="" class="h6 text-neutral-600 py-12">登入</a></li>
+                                <li class="col-6"><a href="" class="h6 text-neutral-600 py-12">註冊</a></li>
+                            </ul>
+                            <button type="button" class="mb-8 flex align-center bg-neutral-0">
+                                <div class="icon"><img src="/assets/images/facebook.svg" alt=""></div>
+                                <p>Facebook 登入</p>
+                            </button>
+                            <button type="button" class="mb-8 flex align-center bg-neutral-0">
+                                <div class="icon"><img src="/assets/images/apple.svg" alt=""></div>
+                                <p>Apple 登入</p>
+                            </button>
+                            <button type="button" class="flex align-center bg-neutral-0">
+                                <div class="icon"><img src="/assets/images/google.svg" alt=""></div>
+                                <p>Google 登入</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

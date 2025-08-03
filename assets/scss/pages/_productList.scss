@@ -1,0 +1,23 @@
+.filterList li:hover a,
+.filterList li.active a{
+    color: $primary-400;
+}
+
+
+.productList a:hover{
+   color: $neutral-700; 
+}
+
+.productList a img{
+    max-width: 100%;
+}
+
+.pageList li .btn{
+    padding: 8px 15px;
+    border-radius: none;
+}
+
+.pageList li:hover,
+.pageList li.active{
+    background-color: $primary-300;
+}

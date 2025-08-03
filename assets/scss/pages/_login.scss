@@ -1,0 +1,113 @@
+.loginBg .picBox{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 596px;
+}
+
+.loginBg .picBox .textBox{
+    position: absolute;
+    top: 71px;
+    left: 40px;
+}
+
+.loginBg .picBox .textBox h3{
+    padding-left: 85px;
+}
+
+.loginBg .tabList li{
+    border-bottom: 2px solid $neutral-300;
+    text-align: center;
+}
+
+.loginBg .tabList li a{
+    display: block;
+}
+
+.loginBg .tabList li:hover,
+.loginBg .tabList li.active {
+    border-bottom: 2px solid $neutral-900;
+}
+
+.loginBg .tabList li:hover a,
+.loginBg .tabList li.active a{
+    color: $neutral-900;
+}
+
+
+.loginBg .infoSet{
+    border-radius: 12px;
+    background-color: $neutral-100;
+}
+
+.loginBg .infoBox {
+    width: calc(100% - 160px);
+    margin: 0 auto;
+}
+
+.loginBg .infoBox h3{
+    text-align: center;
+}
+
+.loginBg .infoBox button{
+    background-color: $neutral-0;
+    border: 1px solid $neutral-300;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.loginBg .infoBox button p{
+    padding-left: 12px;
+}
+
+@media(max-width:767px){
+    .loginBg{
+        padding-top: 0;
+        padding-bottom: 32px;
+    }
+    .loginBg .picBox{
+        height: 240px;
+        border-radius: 0;
+    }
+    .login-row-md{
+        display: flex;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .login-col-md-4{
+        width: 100%;
+    }
+    .loginBg .picSet{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .picBox{
+        background-image: url(/assets/images/banner-sm.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+    .picBox img{
+        opacity: 0;
+    }
+    .loginBg .picBox .textBox{
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+    .loginBg .picBox .textBox h3{
+        padding-left: 0;
+    }
+    .loginBg .infoSet{
+        background-color: $neutral-0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .loginBg .infoBox{
+        width: 100%;
+    }
+}
+
+

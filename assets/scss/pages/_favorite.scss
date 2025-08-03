@@ -1,0 +1,50 @@
+.fav-head{
+    text-align: center;
+}
+
+.timeBg{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.timeBg i{
+    margin-right: 12px;
+}
+
+.timeBg br{
+    display: none;
+}
+
+.boxList li{
+    padding-bottom: 32px;
+    border-bottom: 1px solid $neutral-300;
+}
+
+.boxList li .pic{
+    width: 120px;
+}
+
+.boxList .info{
+    width: calc(100% - 120px);
+    padding-left: 16px;
+}
+
+.boxList li dl{
+    display: flex;
+}
+
+.boxList li dl dt{
+    margin-right: 12px;
+}
+
+.saleInfo{
+    display: none;
+}
+
+
+@media(max-width:767px){
+    .timeBg br{
+        display: block;
+    }
+}

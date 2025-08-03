@@ -1,0 +1,179 @@
+.adBg{
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    background-image: url(/assets/images/banner.png);
+    background-position: center center;
+    background-size: cover;
+}
+.adBg .box{
+    position: absolute;
+    top: 200px;
+    left: 289px;
+}
+
+.adBg .box a{
+    display: inline-block;
+}
+
+.newBg h2{
+    text-align: center;
+}
+.newBg h3{
+    text-align: center;
+}
+
+.hotBg .list li a{
+    position: relative;
+}
+
+.hotBg .list li a .note{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+}
+
+.typeBg .list li a{
+    position: relative;
+}
+
+.typeBg .list li a .note{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collabArea{
+    text-align: center;
+    background-image: url(/assets/images/banner-co-branded.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.collabArea h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.collabArea button{
+    color: $neutral-900;
+    background-color: $primary-300;
+}
+
+.collabArea .star-icon{
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+}
+.collabArea .sparkle-icon{
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+}
+
+.ig-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+
+.ig-row .col-4{
+    width: calc(100% / 12 * 4);
+    padding: 4px;
+}
+.ig-row .col-6{
+    width: calc(100% / 12 * 6);
+    padding: 4px;
+}
+.ig-row .col-12{
+    width: 100%;
+    padding: 4px;
+}
+
+
+
+@media(max-width:767px){
+    .adBg{
+        background-image: url(/assets/images/banner-sm.png);
+        height: 480px;
+    }
+    .adBg .box{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .hotBg .list{
+        overflow-x: auto;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .hotBg .list li{
+        min-width: 316px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .typeBg .list{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .typeBg .list li{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .collabArea{
+        overflow: hidden;
+    }
+    .collabArea h2{
+        flex-direction: column;
+    }
+    .collabArea .mark{
+        display: none;
+    }
+    .collabArea p span{
+        display: block;
+    }
+    .collabArea .star-icon{
+        top: 32px;
+        left: -20px;
+    }
+    .collabArea .sparkle-icon{
+        bottom: 104px;
+        right: -28px;
+    }
+    .ig-row{
+        overflow-x: auto;
+        margin: 0 -8px;
+        flex-wrap: nowrap;
+        
+    }
+    .ig-row img{
+        min-width: 300px;
+    }
+    .ig-row .col-4,
+    .ig-row .col-6,
+    .ig-row .col-12{
+        width: auto;
+        padding: 0 8px;
+    }
+}
+
+
+
+

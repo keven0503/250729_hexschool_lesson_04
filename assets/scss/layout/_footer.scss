@@ -1,0 +1,23 @@
+footer{
+    background-color: $neutral-100;
+}
+
+.website nav{
+    margin-left: auto;
+}
+
+.copyright{
+    text-align: center;
+    border-top: 1px solid $neutral-300;
+    padding-top: 32px;
+}
+
+footer ul li a{
+    display: inline-block;
+}
+
+@media(max-width:767px){
+    .website nav{
+        margin-left: 12px;
+    }
+}
